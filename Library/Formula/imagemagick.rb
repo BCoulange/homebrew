@@ -40,12 +40,7 @@ class Imagemagick < Formula
     opoo '--with-openmp is not supported on Leopard or with Clang'
   end
 
-  bottle do
-    revision 1
-    sha1 '8a1a49f25274e34d73c1c0af27424fa68006f34f' => :mountain_lion
-    sha1 'b0027bd4b4e6a82d3958eee18e5aaf3bffe1f4f1' => :lion
-    sha1 'b5b3ffb0c4bf9fe247b9fdeea789298c71904a12' => :snow_leopard
-  end
+
 
   def pour_bottle?
     # If libtool is keg-only it currently breaks the bottle.
